@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>QRコード生成機</title>
+<meta charset="utf-8">
+<script src="./qr.js"></script>
+<script type="text/javascript"></script>
+<style type="text/css">body{text-align:center;}body *{display:block;}textarea,canvas{margin:10px auto;}</style>
+<script type="text/javascript">function CreateQRCode( data ){qr.canvas({canvas:document.getElementById('qr'),value:data});}document.addEventListener('DOMContentLoaded',function(){CreateQRCode('test');var t=document.getElementById('text');t.addEventListener('change',function(){CreateQRCode(t.value);});});</script>
+</head>
+<body>
+<h1>QRコード生成機</h1>
+<p>JavaScriptでQRコードを生成して表示するだけです。</p>
+<textarea id="text"></textarea>
+<canvas id="qr"></canvas>
+<a href="https://www.npmjs.com/package/browser-qr-js" target="_blank">Use module: browser-qr-js</a>
+</body>
+</html>
