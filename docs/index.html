@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <script src="./qr.js"></script>
 <script type="text/javascript"></script>
-<style type="text/css">body{text-align:center;}body *{display:block;}textarea,canvas{margin:10px auto;}</style>
+<style type="text/css">body{text-align:center;}body *{display:block;}textarea,canvas{margin:10px auto;}textarea{word-break: break-all;width:60%;height:10%;max-width:90%;width:20rem;height:3rem;}</style>
 <script type="text/javascript">function CreateQRCode( data ){qr.canvas({canvas:document.getElementById('qr'),value:data});}document.addEventListener('DOMContentLoaded',function(){CreateQRCode('test');var t=document.getElementById('text');t.addEventListener('change',function(){CreateQRCode(t.value);});});</script>
 </head>
 <body>
